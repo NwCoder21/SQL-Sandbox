@@ -93,6 +93,9 @@ On the left side, it should show a list of databases on the server. If it does n
 
 ---
 
+<!-- Contine from Lesson 18 - Dropping and Using Databases -->
+
+# Dropping and Using Databases
 
 
 
