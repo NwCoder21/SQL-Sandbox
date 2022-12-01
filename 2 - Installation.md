@@ -197,3 +197,32 @@ This will then connect you to your MySQL Server.
 
 ---
 
+![image](https://user-images.githubusercontent.com/107522496/205034711-89958fd6-f60e-46b3-94fa-f800db5a033e.png)
+
+
+Here, I am testing a command. To execute the program, click on the execute button (the lightning symbol, red box in above screenshot).
+The Results Grid, the blue box, is the area where the results are output.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205035598-d68604dd-2342-421d-a29e-4fff69065269.png)
+
+To only run the command where the cursor is placed, click on the lightening bolt with a cursor symbol on it. 
+
+---
+
+# Saving File 
+
+To save the file, go to `File` and select `Sace Script`
+
+
+
+
+
+
+
+
+
+
+
+
