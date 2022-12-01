@@ -77,6 +77,7 @@ We can use snake case or camelcase to name the tables, such as:
 
 Also, by convention, we capitalise all the SQL Keywords
 
+![image](https://user-images.githubusercontent.com/107522496/205104349-3a08f83e-78bd-4a59-bf74-032b978fb58b.png)
 
 
 
