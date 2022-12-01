@@ -38,7 +38,16 @@ But they also might both have users, they might both have payments, but we want 
 
 First thing we need to do as far as code is take a look at what database is currently exist.
 
+![image](https://user-images.githubusercontent.com/107522496/205100581-3e28f33b-9d94-437b-b7b1-7c6f5e1e82cb.png)
 
+When we install MySQL, it comes with some default databases. Don’t need to worry about them. 
+
+The
+
+```sql
+show databases;
+```
+Command will display the current databases on the MySQL Server. 
 
 
 
