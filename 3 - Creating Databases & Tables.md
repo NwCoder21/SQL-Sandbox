@@ -49,13 +49,33 @@ show databases;
 ```
 Command will display the current databases on the MySQL Server. 
 
+---
+
+# How to Create a Database - `CREATE DATABASE <name_of_datbase>;`
+
+Using
+
+```sql
+CREATE DATABASE <name_of_datbase>;
+```
+
+we can create an empty database whcih is named by the name the user provides, which we can then add data to. For example, if I wanted to create a table named `footballers`, I would type:
+
+```sql
+CREATE DATABASE footballers;
+```
+
+> Note: when naming the table, try to avoid using spaces as it can cause porblems down the line.
 
 
+We can use snake case or camelcase to name the tables, such as:
 
+* footballer_names
+* footballerNames
 
+---
 
-
-
+Also, by convention, we capitalise all the SQL Keywords
 
 
 
