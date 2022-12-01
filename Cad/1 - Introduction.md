@@ -59,7 +59,6 @@ All data stored in a relational database is of a certain data type. Some of the 
 
 # Statements
 
-
 ``` sql 
 CREATE TABLE table_name (
    column_1 data_type, 
@@ -68,10 +67,16 @@ CREATE TABLE table_name (
 );
 ```
 
+The above is an example of a SQL statement. A _statement_ is text that the database recognizes as a **valid command**. 
 
+* Statements always end in a semicolon ;. 
 
+Let's break down the above statement
 
-
+1. `CREATE TABLE` is a _clause_/_command_. Clauses/commands perform specific tasks in SQL. By convention, clauses are written in capital letters. 
+> Note: Clauses can also be referred to as commands.  
+2. `table_name` refers to the name of the table that the command will be applied to.
+3.  (column_1 data_type, column_2 data_type, column_3 data_type) is a parameter. A parameter is a list of columns, data types, or values that are passed to a clause as an argument. Here, the parameter is a list of column names and the associated data type.
 
 
 
