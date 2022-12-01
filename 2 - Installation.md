@@ -215,7 +215,9 @@ To only run the command where the cursor is placed, click on the lightening bolt
 
 To save the file, go to `File` and select `Sace Script`
 
+---
 
+Now that we have MySQLWorkbench installed, we have the server, we have the Command Line Client, we are good to go.
 
 
 
