@@ -3,8 +3,8 @@
 # Introduction to SQL
 
 * **SQL**, Structured Query Language, is a **programming language** designed to **manage data** stored in **relational databases**. 
-* SQL operates through simple, declarative statements. 
-* This keeps data accurate and secure, and helps maintain the integrity of databases, regardless of size.
+* SQL operates through **simple, declarative statements**. 
+* This keeps data **accurate** and **secure**, and helps **maintain the integrity** of databases, regardless of size.
 
 * SQL gives you the freedom to explore your data, and power to make better decisions.
 * By learning SQL, you will also learn concepts that apply to nearly every data storage system.
@@ -37,7 +37,6 @@ Using the above command, we returned information from a relational database.
 * A _relational database_ is a database that **organizes information into one or more tables**. Here, the relational database contains one table. 
 * A _table_ is a **collection of data organized into rows and columns**. 
 * Tables are sometimes referred to as relations. Here the table is celebs. 
-
 
 * A _column_ is a set of data values of a particular type. Here, id, name, and age are the columns.
 
@@ -76,10 +75,25 @@ Let's break down the above statement
 1. `CREATE TABLE` is a _clause_/_command_. Clauses/commands perform specific tasks in SQL. By convention, clauses are written in capital letters. 
 > Note: Clauses can also be referred to as commands.  
 2. `table_name` refers to the name of the table that the command will be applied to.
-3.  (column_1 data_type, column_2 data_type, column_3 data_type) is a parameter. A parameter is a list of columns, data types, or values that are passed to a clause as an argument. Here, the parameter is a list of column names and the associated data type.
+3.  (`column_1 data_type`, `column_2 data_type`, `column_3 data_type`) are _parameters_. A _parameter_ is a **list of columns, data types, or values** that are **passed to a clause as an argument**. Here, the parameter is a list of column names and the associated data type.
+
+> Note: The number of lines used does not matter. A statement can be written all on one line, or split up across multiple lines if it makes it easier to read. In this course.
+
+---
+
+``` sql
+SELECT * FROM Customers;
+```
+
+In the above statment:
+
+1. `SELECT` and `FROM` are the clauses here.
+2. We are applying the command to the `celebs` table.
 
 
+---
 
+# Create
 
 
 
