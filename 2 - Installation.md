@@ -101,16 +101,75 @@ Add a password for the root account and then click on `Next`.
 
 ---
 
+![image](https://user-images.githubusercontent.com/107522496/205027950-a3c35cb5-ed0e-497f-96b9-2b38133f6a46.png)
 
+Here, will tick the box for `Configure MySQL Server as a Windows Service` and the `Start the MySQL Server at System Startup` and `Standard System Account`
 
+Then click `Next`.
 
+---
 
+![image](https://user-images.githubusercontent.com/107522496/205028226-1b10a4b5-8c09-4734-adb3-f093d95b7671.png)
 
+Select `grant full access to the user` option and then `Next`.
 
+---
 
+![image](https://user-images.githubusercontent.com/107522496/205028663-b51db69a-edaf-4a57-9d1b-4510e3ebc3b9.png)
 
+And then click on `Execute`, and once done, click on `Finish`
 
+![image](https://user-images.githubusercontent.com/107522496/205028714-8a37d2af-4722-489f-8e41-017b9475c6d4.png)
 
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205028990-9fa89a00-8c19-4d94-a33c-e2762dc7f928.png)
+
+Then some more configuration will be displayed. Click on `Next`
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205029416-8052c952-3d6a-41fe-aa3a-396cbf430277.png)
+
+Here it will ask for your username. Can leave as root and enter the password we created previously. Then click `Next`.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205029577-26a359d6-8678-4738-8024-1a79b6685225.png)
+
+Click on `Execute`. Once done, click on `Finish`.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205029866-f90eacae-6a4c-45e9-9c0b-f6891374bad0.png)
+
+Click on `Next`.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205030198-5a083a81-f1e6-4158-9f69-f04a5482b1ed.png)
+
+Click on `Finish`.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205030446-d832498e-745e-4b11-84ce-d3ff90237571.png)
+
+Keep both options slected and click on `Finish`.
+
+---
+
+# Starting up the Command Line Client 
+
+![image](https://user-images.githubusercontent.com/107522496/205031357-7c47290b-5adb-421b-899c-81334cc11c54.png)
+
+Search for the MySQL Command Line Client.
+
+![image](https://user-images.githubusercontent.com/107522496/205031550-a4c805ab-73b8-4771-8447-7ce2f297357d.png)
+
+Once inside, will ask for the root password set up in the initial set-up process. Once entered, you will have command line access.
+
+---
 
 
 
