@@ -17,7 +17,19 @@ Go to (https://dev.mysql.com/doc/refman/8.0/en/windows-installation.html)
 
 I will be using the MySQL Installer Method. Click on the (https://dev.mysql.com/downloads/installer/) link
 
+---
 
+![image](https://user-images.githubusercontent.com/107522496/204856030-bbfc0fce-fe1e-458d-8c10-944285c3247e.png)
+
+Click on the `Download` button 
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/204856311-88503ace-4395-4109-b4fa-628eda20f1fe.png)
+
+No need to log in, just start the download.
+
+---
 
 
 
