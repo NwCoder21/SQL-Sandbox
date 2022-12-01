@@ -13,7 +13,7 @@ In this section, some of the things we will be covering is:
 # Showing Databases 
 
 
-![image](https://user-images.githubusercontent.com/107522496/205091810-86bb37b7-7968-4cae-b99e-3b7a9b609421.png)
+![image](https://user-images.githubusercontent.com/107522496/205101022-26a12298-b9cd-44d2-a751-5d532659e80f.png)
 
 Within a Database Server, we can have multiple databases. They can be isolated and don't have to have anything to do with the other databases on the database server.  
 
