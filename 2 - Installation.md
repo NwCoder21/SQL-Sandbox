@@ -171,10 +171,29 @@ Once inside, will ask for the root password set up in the initial set-up process
 
 ---
 
+![image](https://user-images.githubusercontent.com/107522496/205032389-a545b528-0e0e-46c2-abbf-2d170a478f6a.png)
 
+Can now run SQL commands from the command line. To quit, enter `quit;`
 
+---
 
+# Writiing Code 
 
+To be ableto write and save code, click here: 
 
+![image](https://user-images.githubusercontent.com/107522496/205033185-ecc82217-e62a-4b6e-af16-530a294dba4e.png)
 
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205033354-f4a127c8-a8e2-44d2-83c1-c021c3cc76ef.png)
+
+And then enter yoour root password:
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205033586-512eb911-f391-45f1-9127-ed43b32cd481.png)
+
+This will then connect you to your MySQL Server. 
+
+---
 
