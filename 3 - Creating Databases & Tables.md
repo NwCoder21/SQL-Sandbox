@@ -85,9 +85,13 @@ Here is an example of creating a `footballerNames` database and then displaying 
 
 ---
 
+![image](https://user-images.githubusercontent.com/107522496/205105420-30eca121-329d-4b53-8ad1-e835f81c5ad2.png)
 
+On the left side, it should show a list of databases on the server. If it does not, click on the refresh button.
 
+![image](https://user-images.githubusercontent.com/107522496/205105633-a84af33f-7fe7-45d5-a76c-c3d91ff899ae.png)
 
+---
 
 
 
