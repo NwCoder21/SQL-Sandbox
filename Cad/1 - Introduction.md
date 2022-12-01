@@ -100,6 +100,39 @@ The `CREATE` statement is used to create a new table in a database.
 
 The following statement will create a new table named `customers`
 
+``` sql 
+CREATE TABLE customers (
+   id INTEGER, 
+   name TEXT, 
+   age INTEGER
+);
+
+```
+
+1. `CREATE TABLE` is a clause/command that tells SQL you want to create a new table. 
+2. `customers` is the name of the table we want to create 
+3. (`id INTEGER`, `name TEXT`, `age INTEGER`) is a list of parameters defining each column, or attribute in the table and its data type:
+
+  *  `id` is the first column in the table. It stores values of data type `INTEGER`
+  *  `name` is the second column in the table. It stores values of data type `TEXT`
+  *  `age` is the third column in the table. It stores values of data type `INTEGER`
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205082639-462eb5d6-a494-4515-91ce-003245b80496.png)
+
+The above is an example of creating an empty new table.
+
+---
+
+
+
+
+
+
+
+
+
 
 
 
