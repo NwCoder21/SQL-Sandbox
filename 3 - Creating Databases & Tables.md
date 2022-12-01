@@ -75,9 +75,15 @@ We can use snake case or camelcase to name the tables, such as:
 
 ---
 
-Also, by convention, we capitalise all the SQL Keywords
+Also, by convention, we capitalise all the SQL Keywords. However, if we did not capitalise them, the code will still work.
+
+---
 
 ![image](https://user-images.githubusercontent.com/107522496/205104349-3a08f83e-78bd-4a59-bf74-032b978fb58b.png)
+
+Here is an example of creating a `footballerNames` database and then displaying all the exisiting databases on the MySQL Server.
+
+---
 
 
 
