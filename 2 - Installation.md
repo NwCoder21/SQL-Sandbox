@@ -75,10 +75,31 @@ Then click on Execute to install the products
 
 ---
 
+# Product Cnfiguration 
 
+![image](https://user-images.githubusercontent.com/107522496/205025979-e588333d-a785-4ab5-9c27-ec212fd80bb8.png)
 
+Then it is time to configure the products.
 
+---
 
+![image](https://user-images.githubusercontent.com/107522496/205026144-a030d2c9-9010-46cc-a9f0-d91cee0d7d07.png)
+
+For the server configuration, leave as it is and click on `Next`.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205026365-85ea230c-ba32-4624-8cf2-62226d62d40c.png)
+
+Important: leave this part checked and click on `Next`
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205026793-536adf33-cd15-42ac-b0f1-c4f1b2f7e0c8.png)
+
+Add a password for the root account and then click on `Next`.
+
+---
 
 
 
