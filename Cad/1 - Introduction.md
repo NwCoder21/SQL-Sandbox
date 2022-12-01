@@ -90,13 +90,15 @@ In the above statment:
 1. `SELECT` and `FROM` are the clauses here.
 2. We are applying the command to the `celebs` table.
 
-
 ---
 
 # Create
 
+The `CREATE` statement is used to create a new table in a database. 
 
+> Note: you can use the `CREATE` statement anytime you want to create a new table from scratch.
 
+The following statement will create a new table named `customers`
 
 
 
