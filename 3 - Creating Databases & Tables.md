@@ -250,7 +250,9 @@ For example, we can say for the `Name` and `Breed` columns, a maximum of 100 cha
 
 ---
 
+<! -- lesson 24 - Creating Tables --> 
 
+# Creating Tables
 
 
 
