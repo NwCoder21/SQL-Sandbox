@@ -200,4 +200,69 @@ If need more information, click [here](https://dev.mysql.com/doc/refman/8.0/en/d
 
 ---
 
+The two main data types we will be working with at the momment are, `INT` (this is an integer data type) and `VARCHAR` (this is a string data type).
+
+---
+
+# `INT`
+
+![image](https://user-images.githubusercontent.com/107522496/205311702-38856a96-4a58-429a-b4bc-4f3ead07b4cd.png)
+
+INT is a whole number and the maximum (signed) value an INT can have is from -2147483647 (negative) to 2147483647 (positive).
+
+> An unsigned value could have a greater value but won't cover for time being. 
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205312400-637a7ea8-7fc6-429f-98d8-4b4d6aabab05.png)
+
+The above are examples of an INT.
+
+---
+
+# `varchar`
+
+Stands for Variable-Length String. This means can store different length of characters into them, such as `apple`, `oranges` and `pineapples`. All of these have a different length of characters. varchar can also store sentences. 
+
+![image](https://user-images.githubusercontent.com/107522496/205313380-2b869b3f-dc54-42ad-821d-73ac1e84e8f8.png)
+
+Above are examplesof other strings. 
+
+---
+
+when we create a table and we assign the data types with `varchar`, we can actually specify a maximum number of characters allowed.
+
+![image](https://user-images.githubusercontent.com/107522496/205315582-82f60141-c6a2-445f-b22c-33368887e9ba.png)
+
+For example, we can say for the `Name` and `Breed` columns, a maximum of 100 characters aare allowed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
