@@ -180,11 +180,24 @@ So there might be a customer's table, a order's table, an address table, etc.
 
 <!-- Lesson 21  - Data Types: The Basics -->  
 
+# Data Types - The Basics
 
+When we define the structure of a table, we're not only saying what column names we want, for example, `name`, `breed` and `age`, but we also specify the types, in other words, what type of information is permitted in each column.
 
+---
 
+![image](https://user-images.githubusercontent.com/107522496/205307486-0afba6e6-04b8-42d9-bee5-704dfed2ba5e.png)
 
+For example, if we wanted to use the `age` column to calculate the age of a cat, we need to ensure the data inputted into that column is a number (integer) so that we can make the calculation, otherwise, if user enters a a number as a string,won't be able to calculate.
 
+---
 
+![image](https://user-images.githubusercontent.com/107522496/205308124-1f48b536-473c-4c47-8b41-582c33167d0b.png)
+
+Many differnt types of data types. Don't have to learn all of them, jsut be aware that they exist. Will only mostly ever use some of the above data types. 
+
+If need more information, click [here](https://dev.mysql.com/doc/refman/8.0/en/data-types.html)
+
+---
 
 
