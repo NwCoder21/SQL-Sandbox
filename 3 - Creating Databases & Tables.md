@@ -236,6 +236,19 @@ when we create a table and we assign the data types with `varchar`, we can actua
 
 For example, we can say for the `Name` and `Breed` columns, a maximum of 100 characters aare allowed.
 
+---
+
+# Activity
+
+![image](https://user-images.githubusercontent.com/107522496/205316299-bc974299-b8b5-4d46-b780-737a17092aab.png)
+
+# Solution 
+
+![image](https://user-images.githubusercontent.com/107522496/205317031-ea4ba431-ccc7-4606-ae44-7297afaa113b.png)
+
+![image](https://user-images.githubusercontent.com/107522496/205317285-da0ad46d-9335-48df-bec3-4e7b68260ff2.png)
+
+---
 
 
 
