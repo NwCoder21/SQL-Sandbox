@@ -252,11 +252,61 @@ For example, we can say for the `Name` and `Breed` columns, a maximum of 100 cha
 
 <! -- lesson 24 - Creating Tables --> 
 
-# Creating Tables
+# Creating Tables - Syntax 
 
+The below is the syntaxt to create a new table: 
 
+```sql
+CREATE TABLE table_name (
+   column_1 data_type, 
+   column_2 data_type, 
+   column_3 data_type
+);
 
+```
 
+For example:
+
+```sql
+
+CREATE TABLE fruits
+(
+  name VARCHAR(100),
+  amount INT
+);
+
+```
+
+REMEMBER: 
+* Seperate each column with a `,`
+* Terminate the statement with a `;`
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205330426-4bc6ab7f-ebb3-4997-ae73-350fb1fb29e1.png)
+
+Created a database called food and created a table named fruits. Can see on the left side that it has now been created.
+
+Other examples are:
+
+```sql
+    CREATE TABLE cats (
+        name VARCHAR(50),
+        age INT
+    );
+     
+    CREATE TABLE dogs (
+        name VARCHAR(50),
+        breed VARCHAR(50),
+        age INT
+    );
+```
+
+---
+
+<!-- Lesson 26 - How do we know it worked? --> 
+
+# Lesson 26 - How do we know it worked?
 
 
 
