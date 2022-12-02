@@ -97,6 +97,10 @@ On the left side, it should show a list of databases on the server. If it does n
 
 # Dropping and Using Databases
 
+```sql
+DROP DATABASE <name>;
+``` 
+This removes a database entirely and all of its contents. 
 
 
 
