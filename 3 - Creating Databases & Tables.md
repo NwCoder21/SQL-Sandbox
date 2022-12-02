@@ -146,14 +146,39 @@ Another way to use a database is by double clicking on it. We can then use the `
 
 ---
 
+<!-- Lesson 20 - Introducing tables) -->
 
+# Introducing Tables
 
+We need to put tables into databases so we can hold data. 
 
+A relational database is a collection of tables.
 
+A more formal definition of a table would be:
 
+Table: a collection of related data held in a strcutured format within a database
 
+For example if we had a fruits table, every fruit would have a
 
+* Name
+* Colour 
+* Country grown in 
 
+![image](https://user-images.githubusercontent.com/107522496/205284076-d95199b3-8924-4449-8325-fe68389cb761.png)
+
+Columns: these are the headers for each table. The first step is t get the headers/columns set up in SQL.
+
+![image](https://user-images.githubusercontent.com/107522496/205284235-14a60f02-132f-4298-a9b3-016521e648ca.png)
+
+Rows: these are the entries of the data (the actual data). Once the columns have eben set up, we can then start to add data to the table. 
+
+Databases in general consist of lots of tables. There's going to be lots of different entities and almost every entity will have its own table.
+
+So there might be a customer's table, a order's table, an address table, etc. 
+
+--- 
+
+<!-- Lesson 21  - Data Types: The Basics -->  
 
 
 
