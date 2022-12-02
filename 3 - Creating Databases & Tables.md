@@ -102,9 +102,49 @@ DROP DATABASE <name>;
 ``` 
 This removes a database entirely and all of its contents. 
 
+![image](https://user-images.githubusercontent.com/107522496/205276120-77286f9f-4f4f-45a2-a886-bf5533ff28c4.png)
 
+In this example, I have deleted the `footballernames` database. 
 
+---
 
+# Using a Database - `USE <name_of_database>;`
+
+To use a database, we use the below command :
+
+```sql
+USE <name_of_database>;
+```
+
+When it comes time to insert information or find information or delete information or create new tables, we have to tell my SQL where we are.
+
+(NOTE: When using `CREATE DATABASE`, it creates the database but you are still not working in tht database. To work in that database, we need to use `USE` command.)
+
+To do that, we use the `USE` command.
+
+![image](https://user-images.githubusercontent.com/107522496/205278298-cdcafab9-74d3-46e1-ba3b-1349393aaef5.png)
+
+We are now working in the fruits database.
+ 
+
+---
+# Checking the Database You Are In - `SELECT database();`
+
+![image](https://user-images.githubusercontent.com/107522496/205278761-e2e62c3b-b9e5-40ef-85d5-0c5dd627fe51.png)
+
+We can use 
+
+```sql
+SELECT database();
+```
+
+to check to database we are working in. 
+
+---
+
+Another way to use a database is by double clicking on it. We can then use the `SELECT database();` to confirm if we are nowin that database. 
+
+---
 
 
 
