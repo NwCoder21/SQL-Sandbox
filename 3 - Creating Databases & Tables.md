@@ -310,11 +310,17 @@ Other examples are:
 
 We can use couple of quick utility commands to inspect our tables.
 
+# `SHOW TABLES;`
 
+![image](https://user-images.githubusercontent.com/107522496/205702392-4897fa98-5106-45bb-9acc-6358ad70a311.png)
 
+`SHOW TABLES;` Can use this statement to view the current database's tables. 
 
+---
 
+ ![image](https://user-images.githubusercontent.com/107522496/205703178-c8b71ab5-c06c-4b0d-8283-ff9c0f530665.png)
 
+ Even though we have a table named `water` in the `drinks` database, when running the `SHOW TABLES;` statement in the `food` database, the `water` will not be outputted.  
 
 
 
