@@ -323,6 +323,25 @@ We can use couple of quick utility commands to inspect our tables.
  Even though we have a table named `water` in the `drinks` database, when running the `SHOW TABLES;` statement in the `food` database, the `water` will not be outputted.  
 
 
+---
+# Checking the Columns Names 
+
+
+
+To show the column names of a particular column, we can use:
+
+```sql
+SHOW COLUMNS FROM <name_of_database>;
+```
+![image](https://user-images.githubusercontent.com/107522496/205703860-8bc67d7e-a9c1-4c71-9fb5-b86f05d2c309.png)
+
+---
+
+However, if we try to showthe columns of a table from a different database, an error ovvurs, such as:  
+
+![image](https://user-images.githubusercontent.com/107522496/205704230-77d58f5b-0ad0-49bc-b50a-d917b75c4396.png)
+
+---
 
 
 
