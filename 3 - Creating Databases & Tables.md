@@ -337,18 +337,21 @@ SHOW COLUMNS FROM <name_of_database>;
 
 ---
 
-However, if we try to showthe columns of a table from a different database, an error ovvurs, such as:  
+However, if we try to showthe columns of a table from a different database, an error occurs, such as:  
 
-![image](https://user-images.githubusercontent.com/107522496/205704230-77d58f5b-0ad0-49bc-b50a-d917b75c4396.png)
+![image](https://user-images.githubusercontent.com/107522496/205704501-51072916-a74e-45bf-be40-e4572fd56b3a.png)
 
 ---
 
 
+# `DESC <name_of_table>;`
+
+![image](https://user-images.githubusercontent.com/107522496/205705206-f79e7b5f-60ef-4ff4-957b-3aad7455cb44.png)
+
+We can also use DESC (stands for Describe), to do what `SHOW TABLES <name_of_table>`
 
 
-
-
-
+![image](https://user-images.githubusercontent.com/107522496/205705045-9a5d9214-4feb-49ac-a5f1-fbf65ccd9882.png)
 
 
 
