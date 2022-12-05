@@ -306,9 +306,9 @@ Other examples are:
 
 <!-- Lesson 26 - How do we know it worked? --> 
 
-# Lesson 26 - How do we know it worked?
+# How do we know it worked?
 
-
+We can use couple of quick utility commands to inspect our tables.
 
 
 
