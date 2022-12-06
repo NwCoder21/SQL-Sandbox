@@ -353,6 +353,75 @@ We can also use DESC (stands for Describe), to do what `SHOW TABLES <name_of_tab
 
 ![image](https://user-images.githubusercontent.com/107522496/205705045-9a5d9214-4feb-49ac-a5f1-fbf65ccd9882.png)
 
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205885553-be7841b2-1d36-41e5-93c6-129145d81f38.png)
+
+Can also use the GUI on the left side to see this information. This way we don’t have to go into a specific table 
+
+---
+<!-- Dropping Tables -->
+
+# Dropping Tables
+
+![image](https://user-images.githubusercontent.com/107522496/205886494-737e3951-2a8e-4d43-9bf5-9118527a7760.png)
+
+To delete tables, we can use:
+
+```sql
+DROP TABLE <tablename>;
+```
+
+This deletes a single table.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205887383-a80d6118-d5dd-4173-ae23-9e7ee8759ba1.png)
+
+Here, have droppedthe sweets table from the food database.  
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205888704-b6624b0d-5705-42da-9774-80e236a316e8.png)
+
+Can also right click on the table on the lft side of the graphical user interface to drop a table. 
+
+---
+
+<!-- Lesson 28 - Tables Basics Activity --> 
+
+---
+
+# Tables Basics Activity 
+
+![image](https://user-images.githubusercontent.com/107522496/205889531-a1df3dc6-ebb6-45a9-af61-7b5a529d3181.png)
+
+
+---
+# Solution 
+
+![image](https://user-images.githubusercontent.com/107522496/205890159-f1cafa80-0e28-4488-8af0-55f2e56a07be.png)
+
+![image](https://user-images.githubusercontent.com/107522496/205890229-1a006456-63cd-48ce-ad31-4c47f4440e05.png)
+
+![image](https://user-images.githubusercontent.com/107522496/205890794-e957cfe0-35e0-4b58-90a5-1c0510e5cc42.png)
+
+![image](https://user-images.githubusercontent.com/107522496/205890379-b05be017-7b52-48ee-8924-8edee8af00cf.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
