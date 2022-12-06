@@ -343,7 +343,6 @@ However, if we try to showthe columns of a table from a different database, an e
 
 ---
 
-
 # `DESC <name_of_table>;`
 
 An alternate way to show the tables in the current database is by using `DESC`. 
@@ -351,7 +350,6 @@ An alternate way to show the tables in the current database is by using `DESC`.
 ![image](https://user-images.githubusercontent.com/107522496/205705206-f79e7b5f-60ef-4ff4-957b-3aad7455cb44.png)
 
 We can also use DESC (stands for Describe), to do what `SHOW TABLES <name_of_table>`
-
 
 ![image](https://user-images.githubusercontent.com/107522496/205705045-9a5d9214-4feb-49ac-a5f1-fbf65ccd9882.png)
 
