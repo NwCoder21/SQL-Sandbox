@@ -408,8 +408,27 @@ Can also right click on the table on the lft side of the graphical user interfac
 
 ![image](https://user-images.githubusercontent.com/107522496/205890379-b05be017-7b52-48ee-8924-8edee8af00cf.png)
 
+![image](https://user-images.githubusercontent.com/107522496/205891025-c98a6058-367b-4059-b00c-eed308944c1c.png)
+
+---
+
+# MySQL Comments
+
+To make notes and comments, we can use `--`.
+
+![image](https://user-images.githubusercontent.com/107522496/205892306-de6a724f-1a91-4434-8403-90dc86a10fd1.png)
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/205892611-23280955-7f13-4075-88d7-e570934d9d3d.png)
+
+Can also comment a whole section ofcode by highlighting the numerous lines and pressing `Ctrl` + `/`. To uncomment it, highlight and press `Ctrl` + `/`
+
+---
 
 
+
+ 
 
 
 
