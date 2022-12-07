@@ -326,9 +326,7 @@ We can use couple of quick utility commands to inspect our tables.
 ---
 # Checking the Columns Names 
 
-
-
-To show the column names of a particular database, we can use:
+To show the column names of a particular table, we can use:
 
 ```sql
 SHOW COLUMNS FROM <name_of_database>;
