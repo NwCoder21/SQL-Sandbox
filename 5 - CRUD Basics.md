@@ -195,6 +195,13 @@ When we are selecting data, we can rename a column to make it shorter or easier 
 
 ---
 
+
+![image](https://user-images.githubusercontent.com/107522496/206703421-88b131e5-36b3-4723-9090-da6a3153e551.png)
+
+Here, have renamed the `first_name` column as `name` for the output of this query.
+
+---
+
 ![image](https://user-images.githubusercontent.com/107522496/206702460-d45b17d8-4ecf-4b97-8696-498c2ed77f05.png)
 
 Here, the column is actually named `department`, but for the output ofthis query, we have namedit depart. If we then run the `DESC` command, it still be named `department`:
@@ -203,12 +210,13 @@ Here, the column is actually named `department`, but for the output ofthis query
 
 ---
 
+So this isn't just about renaming a column when you print it out. When we get into things such as joining data together or writing more complex select queries that are really complicated, we might have some resulting data that doesn't really have a name. We use the `AS` keyword to give it a meaningful name.
 
+---
 
+<! -- Lesson 66 - Using UPDATE --> 
 
-
-
-
+# Using UPDATE
 
 
 
