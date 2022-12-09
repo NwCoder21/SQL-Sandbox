@@ -352,7 +352,7 @@ We use:
 DELETE FROM <table-name> WHERE<condition>
 ```
 
-Need to use the WHERE command with `DELETE FROM`, as otherwise, if we just used `DELETE FROM` followed by a table name, it would delete all rows of that table. The table will still remain however. 
+<mark>IMPORTANT</mark> : Need to use the WHERE command with `DELETE FROM`, as otherwise, if we just used `DELETE FROM` followed by a table name, it would delete all rows of that table. The table will still remain however. 
 
 ---
 
@@ -370,12 +370,15 @@ Using
 DELETE FROM employees WHERE department='Science';
 ```
 
-we have now deleted the whole row where the department column contained Science, i.e., where id number was 3.
+We have now deleted the whole row where the department column contained Science, i.e., where id number was 3.
 
+---
 
+> Remember to use DELETE FROM and not just DELETE.
 
+---
 
-
+contiue from L72 - 1:50 
 
 
 
