@@ -216,12 +216,115 @@ So this isn't just about renaming a column when you print it out. When we get in
 
 <!-- Lesson 66 - Using UPDATE --> 
 
-# Using UPDATE
+# Using `UPDATE`
+
+Here, we are looking at how do we update existing rows in a table? `UPDATE` allows us to change data that's already in a table.
+
+![image](https://user-images.githubusercontent.com/107522496/206719169-d171ecd8-5eef-49b4-b34e-63ed525b7ac1.png)
+
+```sql
+UPDATE <table_name> SET <Column-department What_are_we_trying_to_update> WHERE <which_rows_we_want_to_update>
+```
+
+![image](https://user-images.githubusercontent.com/107522496/206725814-c7a4f6d7-b467-4813-a1fe-be254daaecbc.png)
+
+```sql
+UPDATE employees SET department='Art'
+WHERE department='Science';
+```
+> IMPORTANT! - if we just used `UPDATE employees SET department='Art';`, it would change all fields in the department column to `Art`. 
+---
+
+![image](https://user-images.githubusercontent.com/107522496/206726192-21649cda-aca3-422f-b19c-33417c2d7101.png)
+
+Here, Guy Cheshire's age was 25, but we want to change it to 35. 
+
+```sql
+UPDATE employees SET age=35
+WHERE first_name='Guy';
+```
+
+> IMPORTANT! - if we just used `UPDATE employees SET age=35;`, it would change all fields in the age column to `35`. 
+
+`UPDATe` is mainly used with a `WHERE`.
+
+---
+
+<!-- Lesson 66 - Using UPDATE --> 
+
+# Tip - Try `SELECT`ing Before You `Update`
+
+To prevent any unexpected updates or overwriting the wrong fields, it is recommended that you select whatever you're trying to update before you actually perform the update. For example, we want to change Guy Cheshire's age to 35.
 
 
+```sql
+UPDATE employees SET age=25 WHERE first_name='Guy';
+```
+ Instead of jumping straight into updating the field, use the end part, `WHERE first_name='Guy'` and add it to a `SELECT * FROM <table_name>`, such as:
+
+```sql
+SELECT * FROM employees WHERE first_name='Guy';
+```
+
+This will show us what we will be targeting when using the `UPDATE` command, such as:
+
+![image](https://user-images.githubusercontent.com/107522496/206728536-39d5308c-2065-4d59-8d5a-79797b2b3f24.png)
+
+Here, we are first checking our target row.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/206729223-df9bac14-67d5-4548-b962-d7af6ea3e173.png)
+
+Now, using the UPDATE command, we have update Guy's age to 35.
+
+---
+
+# UPDATE excerise
+
+1. Change Andrew's name to Andy.
+2. Change Chesire to Matt
+3. Change all ages to 25 where departments are English 
+
+![image](https://user-images.githubusercontent.com/107522496/206730439-0ee657d2-da1f-4bd0-aeeb-e553667128a6.png)
 
 
+--- 
 
+# Solution - Change Andrew's name to Andy.
+
+![image](https://user-images.githubusercontent.com/107522496/206730721-2542f2a3-6e46-4225-b351-db8d6f87c98b.png)
+
+First, I have used a `SELECT` statement to pinpoint what I will be changing with the `UPDATE` command.
+
+![image](https://user-images.githubusercontent.com/107522496/206731029-0e6b91b8-c56a-4a39-8060-d1ac7c127673.png)
+
+Then using `UPDATE`, I chnaged it to Andy.
+
+---
+
+
+# Solution - Change Chesire to Matt
+
+![image](https://user-images.githubusercontent.com/107522496/206731381-ae12ba9a-e55e-41ad-8307-a41059c1d5ca.png)
+
+First, I have used a `SELECT` statement to pinpoint what I will be changing with the `UPDATE` command.
+
+![image](https://user-images.githubusercontent.com/107522496/206731578-4b038340-13d4-4723-810f-f844874ae641.png)
+
+Then using `UPDATE`, I changed it to Matt.
+
+---
+
+# Solution - Change all ages to 25 where departments are English 
+
+![image](https://user-images.githubusercontent.com/107522496/206732157-f2c2e254-4879-48df-a1e2-49c486e9a702.png)
+
+First, I have used a `SELECT` statement to pinpoint what I will be changing with the `UPDATE` command.
+
+![image](https://user-images.githubusercontent.com/107522496/206732389-40e55132-d234-4924-880a-52612231bc43.png)
+
+Then using `UPDATE`, I changed all the ages to 25 where department equals English.
 
 
 
