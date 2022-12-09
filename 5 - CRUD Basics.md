@@ -25,7 +25,7 @@ In this section will be focusing on more Read, Update, and Delete and how we can
 
 This is the table and data we will be working with:
 
-![image](https://user-images.githubusercontent.com/107522496/206691571-4f401431-ef14-4735-9dfe-bf26d8698a40.png)
+![image](https://user-images.githubusercontent.com/107522496/206698216-d6401937-dd56-4b9c-9d24-bbd0f2e020c1.png)
 
 ```sql
 CREATE TABLE employees (
@@ -157,6 +157,51 @@ Note: When searching for a string using `WHERE`, search will be case insensitive
 Here, even though the name has been spelt as Jones (capital J), we can search for it using jones.
 
 ---
+
+Excerises:
+
+Q1: Print out all IDs for everyone on database:
+
+![image](https://user-images.githubusercontent.com/107522496/206698412-90255478-2734-4822-b793-5f0a1a66eb48.png)
+
+
+---
+
+Q2: Output all rows for `first_name` and `department`. 
+
+![image](https://user-images.githubusercontent.com/107522496/206698784-01964145-2473-4c8e-89d7-969df8101388.png)
+
+---
+
+Q3; Output  `first_name`, `last_name` and `department` for rows where department equals maths.
+
+![image](https://user-images.githubusercontent.com/107522496/206699123-0dc5a9e8-7fb2-4dbf-b7dc-d85689152322.png)
+
+---
+
+Q4: Output everything for those rows where id is the same as age. 
+
+![image](https://user-images.githubusercontent.com/107522496/206699334-920a294e-1b39-4c24-bf48-104120f4bed5.png)
+
+---
+
+<! -- Lesson 64 - Aliases --> 
+
+# Aliases
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
