@@ -25,7 +25,7 @@ In this section will be focusing on more Read, Update, and Delete and how we can
 
 This is the table and data we will be working with:
 
-![image](https://user-images.githubusercontent.com/107522496/206687025-cd037ef7-eba5-4c62-b0f0-b50315aa000a.png)
+![image](https://user-images.githubusercontent.com/107522496/206691571-4f401431-ef14-4735-9dfe-bf26d8698a40.png)
 
 ```sql
 CREATE TABLE employees (
@@ -87,21 +87,76 @@ SELECT first_name, age FROM employees;
 
 # The WHERE Clause 
 
+`WHERE` is used with `SELECT` and when updating and deleting.
+
+At the moement, when we use `SELECT`, we're selecting every single row. So, if we use:
+
+```sql
+SELECT age FROM employees;
+```
+
+we will get 7 rows back. `WHERE` allows us to retreive specfic rows back which meet a stated condition.
+
+---
+
+For example: 
+
+```sql
+SELECT * FROM employees
+WHERE age=35;
+```
+
+![image](https://user-images.githubusercontent.com/107522496/206692479-0357cb89-b267-477e-8ea6-4caf78c2a34c.png)
+
+Here, we see two rows. 
+
+---
+
+Another exmaple is 
+
+```sql
+SELECT first_name, age FROM employees
+WHERE age=35;
+```
+
+![image](https://user-images.githubusercontent.com/107522496/206692808-22c12523-87b1-43fa-8795-878c53c52589.png)
+
+Here, we are retriving two columns, where the age is equal to 35.
+
+---
 
 
+Note: we do not have to select `age` if we are trying to use `WHERE` with age, but we don't. We can only get the names from employees where age equals four.
 
+```sql
+SELECT first_name, last_name FROM employees
+WHERE age=35;
+```
 
+![image](https://user-images.githubusercontent.com/107522496/206693445-0e557d05-1b69-498c-ac97-dae431ba74e6.png)
 
+Here, `WHERE age=35` happens first, program checks the rows in the age column which have 35, then `SELECT first_name, last_name FROM employees`. This means we do not have to retrive a column using `SELECT` in order to work with that column using `WHERE`.
 
+---
 
+# Using a string with the `WHERE` Clause.
 
+Can also use a string with `WHERE`.
 
+```sql
+SELECT * FROM employees
+WHERE last_name=`Jones`;
+```
 
+![image](https://user-images.githubusercontent.com/107522496/206695302-9a2271cd-dfe7-4d88-b500-20cf311f03b6.png)
 
+Note: When searching for a string using `WHERE`, search will be case insensitive. However, we can enforce case senstivity.
 
+![image](https://user-images.githubusercontent.com/107522496/206695615-81a54180-41c3-4639-bd87-b58830e9c379.png)
 
+Here, even though the name has been spelt as Jones (capital J), we can search for it using jones.
 
-
+---
 
 
 
