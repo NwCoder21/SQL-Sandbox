@@ -46,7 +46,7 @@ SELECT *FROM employees;
 ```
 
 ---
-<! -- Lesson 57 - Officially Introducing SELECT --> 
+<!-- Lesson 57 - Officially Introducing SELECT --> 
 
 # Read - SELECT in More Depth
 
@@ -83,7 +83,7 @@ SELECT first_name, age FROM employees;
 
 ---
 
-<! -- Lesson 59 - The WHERE Clause --> 
+<!-- Lesson 59 - The WHERE Clause --> 
 
 # The WHERE Clause 
 
@@ -185,7 +185,7 @@ Q4: Output everything for those rows where id is the same as age.
 
 ---
 
-<! -- Lesson 64 - Aliases --> 
+<!-- Lesson 64 - Aliases --> 
 
 # Aliases using the `AS` Keyword
 
@@ -214,7 +214,7 @@ So this isn't just about renaming a column when you print it out. When we get in
 
 ---
 
-<! -- Lesson 66 - Using UPDATE --> 
+<!-- Lesson 66 - Using UPDATE --> 
 
 # Using UPDATE
 
