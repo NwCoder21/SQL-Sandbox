@@ -187,7 +187,22 @@ Q4: Output everything for those rows where id is the same as age.
 
 <! -- Lesson 64 - Aliases --> 
 
-# Aliases
+# Aliases using the `AS` Keyword
+
+When we are selecting data, we can rename a column to make it shorter or easier to understand. So it's not the same as renaming the column forever, it's just for that particular output we change a column's name.
+
+> this is temporay, only for that query.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/206702460-d45b17d8-4ecf-4b97-8696-498c2ed77f05.png)
+
+Here, the column is actually named `department`, but for the output ofthis query, we have namedit depart. If we then run the `DESC` command, it still be named `department`:
+
+![image](https://user-images.githubusercontent.com/107522496/206702823-cb0bd614-8d30-446f-a1eb-11e22d8af3c4.png)
+
+---
+
 
 
 
