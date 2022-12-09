@@ -250,6 +250,16 @@ WHERE first_name='Guy';
 
 ---
 
+# Updating Multiple Columns in One Go
+
+Can also update multiple columns in one go. For example:
+
+![image](https://user-images.githubusercontent.com/107522496/206740332-9bc2d505-6e7f-44a9-94ae-f7427866d73b.png)
+
+This will set everyone's current status to Employed, and their age to 21. 
+
+---
+
 <!-- Lesson 66 - Using UPDATE --> 
 
 # Tip - Try `SELECT`ing Before You `Update`
@@ -325,6 +335,48 @@ First, I have used a `SELECT` statement to pinpoint what I will be changing with
 ![image](https://user-images.githubusercontent.com/107522496/206732389-40e55132-d234-4924-880a-52612231bc43.png)
 
 Then using `UPDATE`, I changed all the ages to 25 where department equals English.
+
+---
+
+<!-- Lesson 72 - Introducing Delete --> 
+
+# Introducing Delete 
+
+Here, we will look at how to delete rows from a table in SQL.
+
+![image](https://user-images.githubusercontent.com/107522496/206743413-7ea464e5-d106-4740-ac22-1bddb93c0940.png)
+
+We use:
+
+```sql
+DELETE FROM <table-name> WHERE<condition>
+```
+
+Need to use the WHERE command with `DELETE FROM`, as otherwise, if we just used `DELETE FROM` followed by a table name, it would delete all rows of that table. The table will still remain however. 
+
+---
+
+In the below example, we want to delete rows which contain `Science` in the department column. 
+
+![image](https://user-images.githubusercontent.com/107522496/206744767-6330271a-1009-47c6-ad4d-7ced30570e8c.png)
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/206745100-88d3b96d-1da6-46d2-bbc4-977d6a1fc780.png)
+
+Using
+
+```sql
+DELETE FROM employees WHERE department='Science';
+```
+
+we have now deleted the whole row where the department column contained Science, i.e., where id number was 3.
+
+
+
+
+
+
 
 
 
