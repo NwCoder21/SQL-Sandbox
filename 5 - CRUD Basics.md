@@ -380,14 +380,86 @@ We have now deleted the whole row where the department column contained Science,
 Code
 
 ```sql
--- Delete all cats with name of 'Egg':
-DELETE FROM cats WHERE name='Egg';
+-- Delete all employees with name of 'Guy':
+DELETE FROM employees WHERE name='Guy';
 
--- Delete all rows in the cats table:
-DELETE FROM cats; 
+-- Delete all rows in the employees table:
+DELETE FROM employees; 
 ```
 
+---
 
+<!-- Lesson 74 - DELETE Exercise -->
+
+# `DELETE` Exercise
+
+![image](https://user-images.githubusercontent.com/107522496/207077338-b9152f58-0352-43ff-a31d-7d9b30bcb800.png)
+
+1. Delete all 35 year old employees 
+2. Delete the employees whose age is the same as their id
+3. Delete all emplyoees
+
+
+---
+
+# Solution 
+
+
+1. Delete all 35 year old employees 
+
+![image](https://user-images.githubusercontent.com/107522496/207077812-7551ee93-fc3b-4672-b675-0a71965c4249.png)
+
+First we are using `SELECT` to see what will be targeted when we run the `DELETE` command.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207079041-d9a40efe-4dd6-4f34-9cc2-1e94bbbb3e77.png)
+
+
+Using:
+
+```sql
+DELETE FROM employees WHERE age=35;
+```
+
+we hve removed the two rows where age was 35.
+
+---
+
+2. Delete the employees whose age is the same as their id
+
+![image](https://user-images.githubusercontent.com/107522496/207079860-f7c41c0c-8795-4d50-9a73-52a500056a5e.png)
+
+Using:
+
+```sql
+SELECT * FROM employees where age=id;
+``
+
+we can check what row/s will be targeted.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207080652-97ae980d-5ce2-4b55-bb26-cdfac36980ab.png)
+
+```sql
+DELETE FROM employees where age=id;
+```
+---
+
+3. Delete all emplyoees
+
+![image](https://user-images.githubusercontent.com/107522496/207081603-0279bac6-bf7b-43af-a17d-3092d0a8e8a6.png)
+
+```sql
+DELETE FROM employees;
+SELECT * FROM employees;
+```
+This deletes all entries and leaves the table empty.
+
+---
+
+<!-- Section 6: CRUD Challenge -->
 
 
 
