@@ -227,5 +227,87 @@ ADD COLUMN twitter_handle TEXT;
 
 # Update
 
+The `UPDATE` statement edits a row in a table. You can use the `UPDATE` statement when you want to change existing records. The statement below updates the record with an id value of 4 to have the twitter_handle @taylorswift13.
+
+```sql
+UPDATE celebs 
+SET twitter_handle = '@taylorswift13' 
+WHERE id = 4; 
+```
+
+1. ``UPDATE` is a clause that edits a row in the table.
+2. `celebs` is the name of the table.
+3. `SET` is a clause that indicates the column to edit.
+ * `twitter_handle` is the name of the column that is going to be updated
+ * `@taylorswift13` is the new value that is going to be inserted into the twitter_handle column.
+
+4. `WHERE` is a clause that indicates which row(s) to update with the new column value. Here the row with a 4 in the id column is the row that will have the twitter_handle updated to @taylorswift13.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207067086-2d3cfd0f-313e-4e8b-95c9-3df5ff653652.png)
+
+---
+
+# Delete
+
+The `DELETE FROM` statement **deletes one or more rows from a table**. You can use the statement when you want to delete existing records. The statement below deletes all records in the celebs table with no twitter_handle:
+
+```sql
+DELETE FROM celebs 
+WHERE twitter_handle IS NULL;
+```
+
+1. `DELETE FROM` is a clause that lets you delete rows from a table.
+2. `celebs` is the name of the table we want to delete rows from.
+3. `WHERE` is a clause that lets you select which rows you want to delete. Here we want to delete all of the rows where the twitter_handle column IS NULL.
+4. `IS NULL` is a condition in SQL that returns true when the value is NULL and false otherwise.
+
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207067814-9c443c28-9f9c-41bd-8e4d-6edfaa32c9a8.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
