@@ -352,7 +352,7 @@ We use:
 DELETE FROM <table-name> WHERE<condition>
 ```
 
-<mark>IMPORTANT</mark> : Need to use the WHERE command with `DELETE FROM`, as otherwise, if we just used `DELETE FROM` followed by a table name, it would delete all rows of that table. The table will still remain however. 
+<mark>IMPORTANT</mark> : Need to use the `WHER`E command with `DELETE FROM`, as otherwise, if we just used `DELETE FROM` followed by a table name, it would delete all rows of that table. The table will still remain however. 
 
 ---
 
@@ -377,8 +377,15 @@ We have now deleted the whole row where the department column contained Science,
 > Remember to use DELETE FROM and not just DELETE.
 
 ---
+Code
 
-contiue from L72 - 1:50 
+```sql
+-- Delete all cats with name of 'Egg':
+DELETE FROM cats WHERE name='Egg';
+
+-- Delete all rows in the cats table:
+DELETE FROM cats; 
+```
 
 
 
