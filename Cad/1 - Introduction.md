@@ -320,6 +320,10 @@ Constraints add information about how a column can be used.
 
 ---
 
+In this lesson, we have learned SQL statements that create, edit, and delete data. In the upcoming lessons, we will learn how to use SQL to retrieve information from a database!
+
+---
+
 
 
 
