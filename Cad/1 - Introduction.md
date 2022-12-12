@@ -125,12 +125,94 @@ The above is an example of creating an empty new table.
 
 ---
 
+# Insert
+
+The `INSERT` statement inserts a new row into a table.
+
+We can use the `INSERT` statement when you want to add new records.
+
+---
+
+```sql
+INSERT INTO celebs (id, name, age) 
+VALUES (1, 'Justin Bieber', 22);
+```
+
+The above statement will enter a record for Justin Bieber into the celebs table
+
+* `INSERT INTO` is a clause that adds the specified row or rows.
+* `celebs` is the table the row is added to.
+* (`id, name, age`) is a parameter identifying the columns that data will be inserted into.
+* `VALUES` is a clause that indicates the data being inserted.
+*  (`1, 'Justin Bieber', 22`) is a parameter identifying the values being inserted.
+  1. `1`: an integer that will be added to id column
+  2. `Justin Bieber`: text that will be added to name column
+  3. `22`: an integer that will be added to age column
 
 
+---
+
+![image](https://user-images.githubusercontent.com/107522496/207060155-8bb704ec-8dc0-4b53-a38c-b1189e07966a.png)
+
+Here, we have added four rows to the tableusing `INSERT INTO` statements. and finally, using a `SELECT` statement, have displayed data from the table.  
 
 
+```sql
+INSERT INTO celebs (id, name, age) 
+VALUES (1, 'Justin Bieber', 22); 
 
+INSERT INTO celebs (id, name, age) 
+VALUES (2, 'Beyonce Knowles', 33); 
+ 
+INSERT INTO celebs (id, name, age) 
+VALUES (3, 'Jeremy Lin', 26); 
+ 
+INSERT INTO celebs (id, name, age) 
+VALUES (4, 'Taylor Swift', 26); 
 
+SELECT * FROM celebs;
+```
+
+> Notice the single quotes around name. This is because text strings require quotes around them, while numbers don’t.
+
+---
+
+# `SELECT`
+
+SELECT statements are used to fetch data from a database. In the statement below, SELECT returns all data in the name column of the celebs table.
+
+```sql
+SELECT name FROM celebs;
+```
+
+1. `SELECT` is a clause that indicates that the statement is a query. **You will use SELECT every time you query data from a database.**
+2. `name` specifies the column to query/retreive data from.
+3. `FROM celebs` specifies the name of the table to query/retreive data from. In this statement, data is queried/retreived from the celebs table. 
+
+---
+
+You can also retrieve data from all columns in a table with `SELECT *`.
+
+```sql
+SELECT * FROM celebs;
+```
+
+`*` is a special wildcard character that allows you to select every column in a table without having to name each one individually. Here, the result set contains every column in the celebs table.
+
+**`SELECT` statements always return a new table called the result set.**
+
+![image](https://user-images.githubusercontent.com/107522496/207063390-26003ce8-cbcd-4392-ac5c-45310c3e10fb.png)
+
+---
+
+# Alter
+
+The `ALTER TABLE` statement adds a new column to a table. You can use this command when you want to add columns to a table. The statement below adds a new column `twitter_handle` to the celebs table.
+
+```sql
+ALTER TABLE celebs 
+ADD COLUMN twitter_handle TEXT;
+```
 
 
 
