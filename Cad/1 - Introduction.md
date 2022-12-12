@@ -268,17 +268,57 @@ WHERE twitter_handle IS NULL;
 
 ![image](https://user-images.githubusercontent.com/107522496/207067814-9c443c28-9f9c-41bd-8e4d-6edfaa32c9a8.png)
 
+---
+
+# Constraints
+
+_Constraints_ that add information about how a column can be used are invoked after specifying the data type for a column. They **can be used to tell the database to reject inserted data that does not adhere to a certain restriction**. The statement below sets constraints on the celebs table.
+
+```sql
+CREATE TABLE celebs (
+   id INTEGER PRIMARY KEY, 
+   name TEXT UNIQUE,
+   date_of_birth TEXT NOT NULL,
+   date_of_death TEXT DEFAULT 'Not Applicable'
+);
+```
+
+1. `PRIMARY KEY` columns can be used to uniquely identify the row. Attempts to insert a row with an identical value to a row already in the table will result in a constraint violation which will not allow you to insert the new row.
+
+2. `UNIQUE` columns have a different value for every row. **This is similar to PRIMARY KEY except a table can have many different UNIQUE columns.**
+
+3. `NOT NULL` **columns must have a value**. **Attempts to insert a row without a value for a NOT NULL column will result in a constraint violation and the new row will not be inserted.**
+
+4. `DEFAULT` **columns take an additional argument that will be the assumed value for an inserted row if the new row does not specify a value for that column.**
 
 
+Common errors:
+* Missing the commas after the first and second column declarations.
+* Missing the data type or constraints of each column.
 
+---
 
+# Review
 
+We’ve learned six commands commonly used to manage data stored in a relational database and how to set constraints on such data. What can we generalize so far?
 
+SQL is a programming language designed to manipulate and manage data stored in relational databases.
 
+* A relational database is a database that organizes information into one or more tables.
+* A table is a collection of data organized into rows and columns.
 
+A _statement_ is a string of characters that the database recognizes as a valid command.
 
+* CREATE TABLE creates a new table.
+* INSERT INTO adds a new row to a table.
+* SELECT queries data from a table.
+* ALTER TABLE changes an existing table.
+* UPDATE edits a row in a table.
+* DELETE FROM deletes rows from a table.
 
+Constraints add information about how a column can be used. 
 
+---
 
 
 
