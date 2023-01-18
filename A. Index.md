@@ -143,6 +143,44 @@ Here, we are counting the nummber of people born in May. We can see that 166,384
 
 ---
 
+![image](https://user-images.githubusercontent.com/107522496/213213955-dcf5658f-d539-4e3d-b194-359d964edc95.png)
+
+This shows us how many people there are whose first name is Michaels in the database? We can see there are 50,360 rows. This query took ...
+
+![image](https://user-images.githubusercontent.com/107522496/213214211-67941429-3824-4972-8e9f-9efe2cb1b0ed.png)
+
+4127 ms.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213214463-2f220c40-c05b-4406-b9d6-cf3fa8f2be6d.png)
+
+This shows us how many people there are whose last name is either Hawkins or Snow in the database? We can see there are 200,738 people like this. This query took ...
+
+![image](https://user-images.githubusercontent.com/107522496/213214697-a88ddf2b-ea02-4d6f-9e94-cae8958c33d5.png)
+
+5316 ms.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213214976-b6640f14-c215-4d6a-933b-2b1c60682737.png)
+
+This shows how many people were born on April 1, 1995. We can see there are 5374 people like this. This query took ...
+
+![image](https://user-images.githubusercontent.com/107522496/213215218-3ef65815-e321-4d8a-8294-21a0025fb862.png)
+
+4110 ms.
+
+---
+
+
+
+
+
+
+
+
+
 
 
 
