@@ -79,6 +79,133 @@ DROP INDEX index_name;
 ---
 
 
+# Example of Difference When Using Indexes and When Not Using Them
+
+![image](https://user-images.githubusercontent.com/107522496/213209129-e9c8a616-62f7-407b-b77c-6852e8675d94.png)
+
+We have a table which contains the above columns. This table has 100 million rows/records 
+To generate the random data in this table, the 1000 most popular female, male and last names in the USA were used. 
+
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213210185-58eb7e88-44c3-476c-9557-2b8d4df66eed.png)
+
+On the top right, we will maintain a list of queries and how many milliseconds each query took to complete.
+
+First, we count every row to see how many rows in the table there are ...
+
+![image](https://user-images.githubusercontent.com/107522496/213210609-00083f68-dc11-4029-bf64-81eb01774803.png)
+
+We can see that there are 100 million rows/records in this table.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213210739-0edde985-f459-4803-a924-cfbfe491cd99.png)
+
+We can see that it took 3562 ms to run this query.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213211099-71b4c402-9032-475b-a3a2-cde04243f390.png)
+
+Let's put this query and the time required in our top right table.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213211450-b49f3087-8c10-48df-90f5-f0f8d2eb47d7.png)
+
+Here, we can see that there are 10052 rows where the last name is `Smith`. This query took ...
+
+![image](https://user-images.githubusercontent.com/107522496/213211768-61971b08-a62c-427e-9522-421346bb6416.png)
+
+4262 ms.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213212038-0bed298e-2b0c-4bae-b9ee-96ee0b2d5987.png)
+
+Here, we are counting the number of records where the first name is `Emma.` We can see there are 49767 rows. This query took ...
+
+![image](https://user-images.githubusercontent.com/107522496/213212270-bccdeb7d-1b83-48a2-b20a-670abf68f21f.png)
+
+4066 ms.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213212573-1986a648-6f22-4fb7-9355-d0bbb9c243ec.png)
+
+Here, we are counting the nummber of people born in May. We can see that 166,384 people were born in May. This query took ...
+
+![image](https://user-images.githubusercontent.com/107522496/213212851-3a4350eb-8e92-4b56-9baa-ff4878cd6244.png)
+
+4480 ms
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
