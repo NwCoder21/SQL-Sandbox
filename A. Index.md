@@ -1,83 +1,4 @@
-# Index
-
-# SQL CREATE INDEX Statement
-
-The `CREATE INDEX` statement is used to create indexes in tables.
-
-Indexes are used to retrieve data from the database more quickly than otherwise. The users cannot see the indexes, they are just used to speed up searches/queries.
-
-> Note: Note: Updating a table with indexes takes more time than updating a table without (because the indexes also need an update). So, only create indexes on columns that will be frequently searched against.
-
----
-
-# CREATE INDEX Syntax
-
-Creates an index on a table. Duplicate values are allowed:
-
-```sql
-CREATE INDEX index_name
-ON table_name (column1, column2, ...); 
-```
-
----
-
-# CREATE UNIQUE INDEX Syntax
-
-Creates a unique index on a table. Duplicate values are not allowed:
-
-```sql
-CREATE UNIQUE INDEX index_name
-ON table_name (column1, column2, ...); 
-```
-
-> Note: The syntax for creating indexes varies among different databases. Therefore: Check the syntax for creating indexes in your database.
-
----
-
-# CREATE INDEX Example
-
-The SQL statement below creates an index named `idx_lastname` on the `LastName` column in the `Persons` table:
-
-```sql
-CREATE INDEX idx_lastname
-ON Persons (LastName);
-```
-
-If you want to create an index on a combination of columns, you can list the column names within the parentheses, separated by commas:
-
-```sql
-CREATE INDEX idx_pname
-ON Persons (LastName, FirstName); 
-```
-
-
----
-
-# DROP INDEX Statement
-
-The `DROP INDEX` statement is used to delete an index in a table.
-
-SQL Server:
-
-```sql
-DROP INDEX table_name.index_name;
-```
-
-DB2/Oracle:
-
-```sql
-DROP INDEX index_name;
-```
-
-MySQL:
-
-```sql
-ALTER TABLE table_name
-DROP INDEX index_name; 
-```
-
----
-
+# Indexes
 
 # Example of Difference When Using Indexes and When Not Using Them
 
@@ -282,6 +203,137 @@ we would think that the database first scans all rows to find people with a matc
 We call each possibility a “query plan”, and the “query optimizer” picks what it thinks is best.
 
 ---
+# Creating a Multi-column Index
+
+> REMEMBER: a database can have more than one INDEX. Also, an index can be made for more than one column. 
+
+## Creating a Multi-column Index Syntax:
+
+```yaml
+CREATE INDEX <index_name>
+ON <table_name>  (column1, column2);
+```
+
+For example, on our `person` table, we can: 
+
+
+![image](https://user-images.githubusercontent.com/107522496/213228422-dfff16d8-6c67-47ac-9a4f-8220ca2ecaeb.png)
+
+Remember, when inputting the column names, the order matters. Think of this as sorting the data first by `last_name`, then by `first_name`.
+
+----
+
+Once this INDEX has been created, let's test it out and see how many people named “John Williams” are in the database? ...
+
+![image](https://user-images.githubusercontent.com/107522496/213229000-57fda14f-b20a-4ff3-ade0-1634b7cd04db.png)
+
+We can see there are 36 John Williams in our table. This query took: 
+
+![image](https://user-images.githubusercontent.com/107522496/213229445-5630d660-ff30-4598-aa81-f3daa8a231a8.png)
+
+27 ms. 
+
+---
+
+Let's see how many `Julie` `Andrews` there are in the table? There are 46 and this query took .. 
+
+![image](https://user-images.githubusercontent.com/107522496/213231472-f49e9080-6e66-47d6-acbd-f6f214ff3390.png)
+
+26 ms. 
+
+---
+
+---
+
+---
+
+# SQL CREATE INDEX Statement
+
+The `CREATE INDEX` statement is used to create indexes in tables.
+
+Indexes are used to retrieve data from the database more quickly than otherwise. The users cannot see the indexes, they are just used to speed up searches/queries.
+
+> Note: Note: Updating a table with indexes takes more time than updating a table without (because the indexes also need an update). So, only create indexes on columns that will be frequently searched against.
+
+---
+
+# CREATE INDEX Syntax
+
+Creates an index on a table. Duplicate values are allowed:
+
+```sql
+CREATE INDEX index_name
+ON table_name (column1, column2, ...); 
+```
+
+---
+
+# CREATE UNIQUE INDEX Syntax
+
+Creates a unique index on a table. Duplicate values are not allowed:
+
+```sql
+CREATE UNIQUE INDEX index_name
+ON table_name (column1, column2, ...); 
+```
+
+> Note: The syntax for creating indexes varies among different databases. Therefore: Check the syntax for creating indexes in your database.
+
+---
+
+# CREATE INDEX Example
+
+The SQL statement below creates an index named `idx_lastname` on the `LastName` column in the `Persons` table:
+
+```sql
+CREATE INDEX idx_lastname
+ON Persons (LastName);
+```
+
+If you want to create an index on a combination of columns, you can list the column names within the parentheses, separated by commas:
+
+```sql
+CREATE INDEX idx_pname
+ON Persons (LastName, FirstName); 
+```
+
+
+---
+
+# DROP INDEX Statement
+
+The `DROP INDEX` statement is used to delete an index in a table.
+
+SQL Server:
+
+```sql
+DROP INDEX table_name.index_name;
+```
+
+DB2/Oracle:
+
+```sql
+DROP INDEX index_name;
+```
+
+MySQL:
+
+```sql
+ALTER TABLE table_name
+DROP INDEX index_name; 
+```
+
+---
+
+
+
+
+
+
+
+
+```
+
 
 
 
