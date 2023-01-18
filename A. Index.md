@@ -53,12 +53,30 @@ ON Persons (LastName, FirstName);
 
 ---
 
-DROP INDEX Statement
+# DROP INDEX Statement
 
-The DROP INDEX statement is used to delete an index in a table.
+The `DROP INDEX` statement is used to delete an index in a table.
 
+SQL Server:
 
+```sql
+DROP INDEX table_name.index_name;
+```
 
+DB2/Oracle:
+
+```sql
+DROP INDEX index_name;
+```
+
+MySQL:
+
+```sql
+ALTER TABLE table_name
+DROP INDEX index_name; 
+```
+
+---
 
 
 
