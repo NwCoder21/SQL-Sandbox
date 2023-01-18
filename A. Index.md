@@ -173,6 +173,128 @@ This shows how many people were born on April 1, 1995. We can see there are 5374
 
 ---
 
+![image](https://user-images.githubusercontent.com/107522496/213216368-55a0831c-82be-4d6f-bcd1-1e5369905a30.png)
+
+* 7 queries were ran, and the execution times were all very similar. This is because in order to answer each query, the database had to scan all 100 MILLION rows to check each record for a match.
+
+* Our 7 scans of the entire table took a combined total of 29,921 milliseconds.
+
+---
+
+However, we can quicken our search times even more by building an `INDEX`.
+
+When you create an index, the database will generate a method to rapidly find data based on one or more columns.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213217283-e2225dc0-a118-4aae-9491-6f5e0e62667c.png)
+
+For our first example of an INDEX, let's create an INDEX on the `first_name` column of the `person table`
+
+---
+
+To create the INDEX name, we will use the below syntax
+
+```yaml
+CREATE INDEX <tableName>_<columnName>_idx
+ON <tableName> (<columnName>);
+```
+
+So, in our example it becomes:
+
+```yaml
+CREATE INDEX person_first_name_idx
+ON person (first_name);
+```
+
+![image](https://user-images.githubusercontent.com/107522496/213219390-acf6b242-5d90-4dc1-8e84-7ab714f22ca5.png)
+
+To build this index, it took over 4 mins. This is because the database had to scan 100 MILLION rows and build a `first_name` INDEX from scratch
+
+---
+
+Now, Let’s test our new INDEX by repeating an earlier query where we `COUNT`ed the number of people named `Emma`...
+
+![image](https://user-images.githubusercontent.com/107522496/213220308-b1696558-5811-407f-83da-2e3698ca4afc.png)
+
+After having built the INDEX, the same query now took 508 ms.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213220622-18beb30b-3185-4c38-8b7e-ce8deeb7b2c1.png)
+
+However, if we repeat the `COUNT` of people with last name `Smith`, it takes 4,415 milliseconds, which is the slightly more than it took before we created the INDEX. WHy is it taking even longer after we have built an INDEX? The answer to this is because our INDEX was built for the `first_name` column. The `last_name` was not indexed.
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213221916-b07315d0-4f4a-4f11-aab5-8203389ea0dd.png)
+
+Likewsie, if we search for people born on April 1, 1995, the query should not run any faster than last time.  This time it took 4011, which is very similar to the earlier search time.  
+
+Our INDEX improved the speed of searches by `first_name`, but had no effect on queries by `last_name` or `birthday` columns.
+
+---
+
+However, if we combine multiple columns, and only one of those columns have been indexed, it still will improve search times. For example, let's `COUNT` the number of people named `Julie Andrews` ...
+
+![image](https://user-images.githubusercontent.com/107522496/213223106-5e8a3d2f-27b8-46dd-aa09-bba6013cfec9.png)
+
+This search took 514 ms. 
+
+---
+
+![image](https://user-images.githubusercontent.com/107522496/213223474-cc8aa876-90fb-449d-ad46-2cb048d09284.png)
+
+By contrast, if you `COUNT` people with `last_name` of `Andrews` and born on June 12, 1992, it takes 4,274 milliseconds.
+
+The reason why the 
+
+```sql
+SELECT COUNT(*)
+FROM PERSON
+WHERE first_name = 'Julie' AND last_name = 'Andrews';
+```
+
+is quicker is because the first_name column has been indexed.  
+
+The full name query benefited from the `first_name` index, because the database was able to use it to quickly find all the `Julies`.
+
+In the second query: 
+
+```sql
+SELECT COUNT(*)
+FROM PERSON
+WHERE last_name = 'Andrews' AND birthday = '1992-06-12';
+```
+
+had no index to help. It had to perform a full scan of the table to find all people with last name `Andrews`, and then find those with a matching birthday.
+
+---
+
+In the example below:
+
+![image](https://user-images.githubusercontent.com/107522496/213225942-e428f8a2-0d47-48df-97a7-bfff9222aac7.png)
+
+we would think that the database first scans all rows to find people with a matching birthday, and then filter by first name. But this does not happpen. Just because we wrote it in this order does not mean the database will do its work in that order. The database will consider all possible ways to execute your query, then chooses the optimal path.
+
+![image](https://user-images.githubusercontent.com/107522496/213226595-952bd307-e6d1-48f3-85cf-7730d9d1c496.png)
+
+We call each possibility a “query plan”, and the “query optimizer” picks what it thinks is best.
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
